@@ -21,10 +21,46 @@
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/SamuelAfonso">
-        <img src="https://avatars.githubusercontent.com/u/106821260?v=4" width="100px;" alt="Foto de Samuel Afonso no GitHub"/><br>
+      <a href="https://github.com/arthurfonsecaa">
+        <img src="https://avatars.githubusercontent.com/u/169956243?v=4" width="100px;" alt="Foto de Arthur Fonseca no GitHub"/><br>
         <sub>
-          <b>Samuel Afonso</b>
+          <b>Arthur Fonseca</b>
         </sub>
       </a>
     </td>
+     <td align="center">
+      <a href="https://github.com/RudsonMartin">
+        <img src="https://avatars.githubusercontent.com/u/185992135?v=4" width="100px;" alt="Foto de Rudson Martin no GitHub"/><br>
+        <sub>
+          <b>Rudson Martins</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/14luke08">
+        <img src="https://avatars.githubusercontent.com/u/119440440?v=4" width="100px;" alt="Foto de Mateus Santos no GitHub"/><br>
+        <sub>
+          <b>Mateus Santos</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/lucascaldsb">
+        <img src="https://avatars.githubusercontent.com/u/90349578?v=4" width="100px;" alt="Foto de Lucas Caldas no GitHub"/><br>
+        <sub>
+          <b>Lucas Caldas</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="https://github.com/DanNunes777">
+        <img src="https://avatars.githubusercontent.com/u/101228207?v=4" width="100px;" alt="Foto de Daniel Nunes no GitHub"/><br>
+        <sub>
+          <b>Daniel Nunes</b>
+        </sub>
+      </a>
+    </td>
+
+
+
+
