@@ -19,7 +19,7 @@
 
 • Desenvolver um jogo no estilo Carbon 2185 com mecânicas básicas e ambientação textual, rodando exclusivamente no CMD.
 
-<div align="center">
+<div align="left">
   <h2> Colaboradores </h2>
 </div> 
 
