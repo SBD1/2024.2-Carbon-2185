@@ -23,6 +23,7 @@
   <h2> Colaboradores </h2>
 </div> 
 
+<div align="center">
 <table>
   <tr>
     <td align="center">
@@ -65,6 +66,7 @@
         </sub>
       </a>
     </td>
+</div>
 
 
 
