@@ -8,6 +8,10 @@
  
 • O sistema de jogo coloca grande foco em combate tático, hackeamento e personalização dos personagens, permitindo que cada jogador modifique seu corpo com aprimoramentos cibernéticos e escolha habilidades que se alinhem ao estilo único do seu personagem.
 
+<td align="center">
+      <img src="https://i.pinimg.com/736x/b3/ab/fc/b3abfc7354e0ae4873a021040e24b9a8.jpg" width="300px;" alt="Carbon2185"/><br>
+
+
 <div align="left">
   <h2>Objetivo</h2>
 </div> 
