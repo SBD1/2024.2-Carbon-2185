@@ -51,7 +51,7 @@
       </a>
     </td>
      <td align="center">
-      <a href="https://github.com/lucascaldsb">
+      <a href="https://github.com/lucascaldasb">
         <img src="https://avatars.githubusercontent.com/u/90349578?v=4" width="100px;" alt="Foto de Lucas Caldas no GitHub"/><br>
         <sub>
           <b>Lucas Caldas</b>
