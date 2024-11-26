@@ -1,0 +1,36 @@
+name: sync da docs na main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Prepare a new branch with only the docs folder
+      - name: Filter only docs folder
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          
+          # Create a new orphan branch for docs
+          git checkout --orphan docs-only
+
+          # Remove all files except the docs folder
+          git reset --hard
+          git clean -fdx
+          mv docs/* .
+          git add .
+          git commit -m "Sync docs folder"
+
+          # Force push to main
+          git branch -M main
+          git push origin main --force
