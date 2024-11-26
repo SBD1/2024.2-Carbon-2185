@@ -1,36 +1,29 @@
-name: sync da docs na main
+
+name: ci 
+
 on:
   push:
-    branches:
+    branches: 
       - main
+    paths:
+      - 'docs/**'        
+      - 'mkdocs.yml'     
+
+permissions:
+  contents: write
 
 jobs:
-  sync-docs:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      # Checkout the repository
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          fetch-depth: 0
-
-      # Prepare a new branch with only the docs folder
-      - name: Filter only docs folder
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          
-          # Create a new orphan branch for docs
-          git checkout --orphan docs-only
-
-          # Remove all files except the docs folder
-          git reset --hard
-          git clean -fdx
-          mv docs/* .
-          git add .
-          git commit -m "Sync docs folder"
-
-          # Force push to main
-          git branch -M main
-          git push origin main --force
+          python-version: 3.x
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-material
+      - run: pip install pillow cairosvg
+      - run: mkdocs gh-deploy --force
