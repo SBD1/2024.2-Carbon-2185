@@ -39,7 +39,3 @@
 /* Altere a cor conforme necessário */
     font-weight: bold; /* Deixa o texto eX'm negrito */
 }
-
-h1.md-header-nav__title, .md-header-nav__title {
-    font-size: 200px !important; /* O '!important' força a mudança */
-}
