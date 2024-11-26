@@ -1,0 +1,42 @@
+name: Sync entrega01-modelagem to main
+
+on:
+  push:
+    branches:
+      - gh-pages  # Dispara quando há um push na branch gh-pages
+
+jobs:
+  sync-to-main:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Configure o Git para commitar alterações
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Copiar o arquivo desejado da branch gh-pages
+      - name: Checkout gh-pages
+        run: git checkout gh-pages -- entrega01-modelagem
+
+      # Trocar para a branch main
+      - name: Checkout main
+        run: git checkout main
+
+      # Substituir o conteúdo com o arquivo da branch gh-pages
+      - name: Replace content
+        run: |
+          git rm -rf .
+          mv entrega01-modelagem .
+          git add entrega01-modelagem
+
+      # Commit e push para a branch main
+      - name: Commit and push
+        run: |
+          git commit -m "Atualizando entrega01-modelagem da gh-pages para main"
+          git push origin main --force
